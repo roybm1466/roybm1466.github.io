@@ -47,19 +47,25 @@ section {
     border-radius: 5px;
 }
 
-.whatsapp-button {
+.whatsapp-button, .social-button {
     display: inline-block;
-    background-color: #25D366;
+    background-color: #25D366; /* צבע רקע לוואטסאפ */
     color: white;
     padding: 15px 25px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin: 10px;
 }
 
-.whatsapp-button i {
+.social-button {
+    background-color: #3b5998; /* צבע רקע לפייסבוק */
+}
+
+.whatsapp-button i, .social-button i {
     margin-left: 10px;
+}
+
 }
 
 footer {
