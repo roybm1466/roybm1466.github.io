@@ -60,6 +60,8 @@ section {
 
 .social-button {
     background-color: #3b5998; /* צבע רקע לפייסבוק */
+}.instagram-button {
+    background-color: #E1306C; /* אינסטגרם */
 }
 
 .whatsapp-button i, .social-button i {
