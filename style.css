@@ -47,28 +47,32 @@ section {
     border-radius: 5px;
 }
 
-.whatsapp-button, .social-button {
+.whatsapp-button, .social-button, .instagram-button {
     display: inline-block;
-    background-color: #25D366; /* צבע רקע לוואטסאפ */
-    color: white;
     padding: 15px 25px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
     margin: 10px;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
 }
 
 .social-button {
-    background-color: #3b5998; /* צבע רקע לפייסבוק */
+    background-color: #3b5998; /* פייסבוק */
 }
+
 .instagram-button {
     background-color: #E1306C; /* אינסטגרם */
 }
 
-.whatsapp-button i, .social-button i {
+.whatsapp-button i, .social-button i, .instagram-button i {
     margin-left: 10px;
-}
-
 }
 
 footer {
