@@ -60,7 +60,15 @@ section {
 }
 
 .whatsapp-button {
-    background-color: #25D366;
+    .whatsapp-button {
+    background: linear-gradient(to right, #25D366, #128C7E);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
 }
 
 .social-button {
