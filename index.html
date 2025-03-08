@@ -3,34 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>פתרונות אבטחה פרימטר</title>
+    <title>פרימיטר פתרונות אבטחה</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="לוגו החברה">
-        <h1>פתרונות אבטחה פרימטר</h1>
+
+    <!-- תפריט ניווט -->
+    <nav class="navbar">
+        <a href="#home">בית</a>
+        <a href="#services">שירותים</a>
+        <a href="#contact">צור קשר</a>
+    </nav>
+
+    <!-- כותרת ולוגו -->
+    <header id="home">
+        <img src="logo.png" alt="פרימיטר פתרונות אבטחה">
+        <h1>פרימיטר פתרונות אבטחה</h1>
         <p>מתמחים בהתקנת מצלמות אבטחה, אינטרקום, מנעולנות ומנעולים חכמים</p>
     </header>
-    <a href="#" onclick="scrollToTop()" id="backToTop" class="back-to-top">⬆ חזרה למעלה</a>
-// כשהמשתמש גולל למטה 100px, הכפתור יופיע
-window.onscroll = function() { scrollFunction() };
 
-function scrollFunction() {
-    let button = document.getElementById("backToTop");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        button.style.display = "block";
-    } else {
-        button.style.display = "none";
-    }
-}
-
-// פונקציה להחזרה למעלה
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
+    <!-- שירותים -->
     <section id="services">
         <h2>השירותים שלנו</h2>
         <div class="service">
@@ -49,25 +42,53 @@ function scrollToTop() {
             <p>פריצת דלתות, החלפת צילינדרים, התקנת מנעולים חכמים וביומטריים.</p>
         </div>
     </section>
-    
+
+    <!-- צור קשר -->
     <section id="contact">
         <h2>צור קשר</h2>
         <p>לייעוץ והצעת מחיר, שלחו לנו הודעה בוואטסאפ!</p>
+
         <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-button" target="_blank">
             <i class="fab fa-whatsapp"></i> שלח הודעה בוואטסאפ
         </a>
+
         <a href="https://www.facebook.com/PerimeterSecurity" target="_blank" class="social-button">
             <i class="fab fa-facebook"></i> בקרו אותנו בפייסבוק
         </a>
+
         <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank" class="instagram-button">
             <i class="fab fa-instagram"></i> עקבו אחרינו באינסטגרם
         </a>
-        
-     
+
+        <!-- טופס יצירת קשר -->
+        <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="שם מלא" required>
+            <input type="email" name="email" placeholder="אימייל" required>
+            <textarea name="message" placeholder="הודעה" required></textarea>
+            <button type="submit">שלח הודעה</button>
+        </form>
     </section>
-    
-    <footer>
-        <p>© 2024 פתרונות אבטחה פרימטר | כל הזכויות שמורות</p>
-    </footer>
+
+    <!-- כפתור חזרה למעלה -->
+    <button onclick="scrollToTop()" id="backToTop" class="back-to-top">⬆</button>
+
+    <script>
+        // פונקציה להצגת כפתור חזרה למעלה בגלילה
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 </body>
 </html>
