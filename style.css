@@ -71,18 +71,30 @@ section {
     background-color: #E1306C; /* אינסטגרם */
 }
 
-#back-to-top {
+.back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #000;
+    background-color: #333;
     color: white;
     padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none; /* בהתחלה הכפתור מוסתר */
     cursor: pointer;
-    display: none;
-    border: none;
+    font-size: 16px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
 }
 
 #back-to-top:hover {
