@@ -20,10 +20,11 @@ body {
 }
 
 header img {
-    max-width: 120px; /* במקום 120px */
+    max-width: 150px; /* שינוי לגודל גדול יותר */
     height: auto;
     display: block;
     margin: 0 auto;
+
 }
 
 }
