@@ -20,7 +20,7 @@ body {
 }
 
 header img {
-    max-width: 40px; /* במקום 120px */
+    max-width: 80px; /* במקום 120px */
     height: auto;
     display: block;
     margin: 0 auto;
