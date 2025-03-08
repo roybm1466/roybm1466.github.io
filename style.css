@@ -60,15 +60,7 @@ section {
 }
 
 .whatsapp-button {
-    .whatsapp-button {
     background: linear-gradient(to right, #25D366, #128C7E);
-    color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-
 }
 
 .social-button {
@@ -79,8 +71,8 @@ section {
     background-color: #E1306C; /* אינסטגרם */
 }
 
-.whatsapp-button i, .social-button i, .instagram-button i {
-    margin-left: 10px;
+
+
 }
 
 footer {
