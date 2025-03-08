@@ -19,12 +19,13 @@ body {
     margin: 10px;
 }
 
-header {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+header img {
+    max-width: 40px; /* במקום 120px */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 }
 
 .service {
