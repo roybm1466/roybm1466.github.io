@@ -14,6 +14,22 @@
         <p>מתמחים בהתקנת מצלמות אבטחה, אינטרקום, מנעולנות ומנעולים חכמים</p>
     </header>
     <a href="#" onclick="scrollToTop()" id="backToTop" class="back-to-top">⬆ חזרה למעלה</a>
+// כשהמשתמש גולל למטה 100px, הכפתור יופיע
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    let button = document.getElementById("backToTop");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// פונקציה להחזרה למעלה
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
     <section id="services">
         <h2>השירותים שלנו</h2>
