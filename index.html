@@ -29,15 +29,16 @@
 
     <!-- סקריפט הפעלת רקע מונפש -->
     <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#aaaaaa" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.3, "random": true },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": false },
-                "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false }
+      #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    z-index: -100; /* מבטיח שהרקע יהיה מאחורי כל התוכן */
+    top: 0;
+    left: 0;
+}
+
             },
             "interactivity": {
                 "detect_on": "canvas",
