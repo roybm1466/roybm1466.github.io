@@ -46,6 +46,13 @@ header img {
     background: rgba(240, 240, 240, 0.8);
 }
 
+/* עיצוב לתמונות */
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* עיצוב לכפתורי יצירת קשר */
 .whatsapp-button, .social-button, .instagram-button {
     display: inline-block;
@@ -69,4 +76,23 @@ header img {
 
 .instagram-button {
     background-color: #E1306C;
+}
+
+/* כפתור חזרה למעלה */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
 }
