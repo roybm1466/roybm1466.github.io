@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>פרימיטר פתרונות אבטחה</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
+    <!-- קישור ל-CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- טעינת FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- קישור ל-favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- טעינת Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
 
     <!-- רקע מונפש -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <div id="particles-js"></div>
 
     <!-- תפריט ניווט -->
     <nav class="navbar">
@@ -29,18 +36,57 @@
         <p>מתמחים בהתקנת מצלמות אבטחה, אינטרקום, מנעולנות ומנעולים חכמים</p>
     </header>
 
-    <!-- סקריפט הפעלת רקע מונפש -->
-    <script>
-      #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ffffff, #f0f0f0);
-    z-index: -100; /* מבטיח שהרקע יהיה מאחורי כל התוכן */
-    top: 0;
-    left: 0;
-}
+    <!-- שירותים -->
+    <section id="services">
+        <h2>השירותים שלנו</h2>
+        <div class="service">
+            <img src="perimeter-camera.jpg" alt="מצלמת פרימיטר">
+            <h3>מצלמת פרימיטר</h3>
+            <p>מצלמה הממוקמת בכניסה או לאורך הגדר החיצונית של הבית או העסק, לניטור התנועה וניהול הביטחון.</p>
+        </div>
 
+        <div class="service">
+            <img src="financial-camera.jpg" alt="מצלמה פיננסית">
+            <h3>מצלמה פיננסית</h3>
+            <p>מצלמה המוצבת מעל אזור קופה בעסק, לניטור פעילות עובדים ומניעת גניבות והונאות.</p>
+        </div>
+
+        <div class="service">
+            <img src="safety-camera.jpg" alt="מצלמת בטיחות לגני ילדים">
+            <h3>מצלמת בטיחות לגני ילדים</h3>
+            <p>מצלמה המוצבת בתוך גני ילדים או אזורי משחק, לניטור מרחוק ושמירה על בטיחות הילדים.</p>
+        </div>
+    </section>
+
+    <!-- צור קשר -->
+    <section id="contact">
+        <h2>צור קשר</h2>
+        <p>לייעוץ והצעת מחיר, שלחו לנו הודעה בוואטסאפ!</p>
+
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i> שלח הודעה בוואטסאפ
+        </a>
+
+        <a href="https://www.facebook.com/PerimeterSecurity" target="_blank" class="social-button">
+            <i class="fab fa-facebook"></i> בקרו אותנו בפייסבוק
+        </a>
+
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank" class="instagram-button">
+            <i class="fab fa-instagram"></i> עקבו אחרינו באינסטגרם
+        </a>
+    </section>
+
+    <!-- הפעלת Particles.js -->
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#aaaaaa" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": false },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false }
             },
             "interactivity": {
                 "detect_on": "canvas",
@@ -49,8 +95,6 @@
             "retina_detect": true
         });
     </script>
-<link rel="icon" href="logo.png" type="image/png">
 
 </body>
 </html>
-
