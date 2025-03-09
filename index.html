@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>פרימיטר פתרונות אבטחה</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- רקע מונפש -->
-<div id="particles-js"></div>
+
+    <!-- רקע מונפש -->
+    <div id="particles-js"></div>
 
     <!-- תפריט ניווט -->
     <nav class="navbar">
@@ -17,26 +19,6 @@
         <a href="#services">שירותים</a>
         <a href="#contact">צור קשר</a>
     </nav>
-<script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-
-        "particles": {
-            "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
-            "color": { "value": "#aaaaaa" }, <!-- שינוי לצבע אפור עדין -->
-            "shape": { "type": "circle" },
-            "opacity": { "value": 0.3, "random": true },
-            "size": { "value": 3, "random": true },
-            "line_linked": { "enable": false },
-            "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": { "onhover": { "enable": false }, "onclick": { "enable": false } }
-        },
-        "retina_detect": true
-    });
-</script>
-
 
     <!-- כותרת ולוגו -->
     <header id="home">
@@ -45,146 +27,26 @@
         <p>מתמחים בהתקנת מצלמות אבטחה, אינטרקום, מנעולנות ומנעולים חכמים</p>
     </header>
 
-    <!-- שירותים -->
-    <section id="services">
-        <h2>השירותים שלנו</h2>
-        <div class="service">
-          <!-- שירותי מצלמות אבטחה -->
-<section id="cameras">
-    <h2>מצלמות אבטחה</h2>
-
-    <div class="camera">
-        <img src="perimeter-camera.jpg" alt="מצלמת פרימיטר">
-        <h3>מצלמת פרימיטר</h3>
-        <p>מצלמה הממוקמת בכניסה או לאורך הגדר החיצונית של הבית או העסק, לניטור התנועה וניהול הביטחון.</p>
-    </div>
-
-    <div class="camera">
-        <img src="financial-camera.jpg" alt="מצלמה פיננסית">
-        <h3>מצלמה פיננסית</h3>
-        <p>מצלמה המוצבת מעל אזור קופה בעסק, לניטור פעילות עובדים ומניעת גניבות והונאות.</p>
-    </div>
-
-    <div class="camera">
-        <img src="safety-camera.jpg" alt="מצלמת בטיחות לגני ילדים">
-        <h3>מצלמת בטיחות לגני ילדים</h3>
-        <p>מצלמה המוצבת בתוך גני ילדים או אזורי משחק, לניטור מרחוק ושמירה על בטיחות הילדים.</p>
-    </div>
-    <!-- סוגי מצלמות – אנלוגיות מול רשת -->
-<section id="camera-types">
-    <h2>מצלמות אנלוגיות מול מצלמות רשת (IP)</h2>
-    <div class="camera-type">
-        <h3>📡 מצלמות רשת (IP)</h3>
-        <p>מצלמות רשת מתקדמות, המתחברות לאינטרנט ומאפשרות גישה מרחוק מכל מכשיר נייד או מחשב.</p>
-        <ul>
-            <li>איכות תמונה גבוהה (HD, 4K).</li>
-            <li>גישה מכל מקום דרך אפליקציה.</li>
-            <li>כוללות הקלטה בענן ואחסון פנימי.</li>
-        </ul>
-    </div>
-
-    <div class="camera-type">
-        <h3>🔌 מצלמות אנלוגיות</h3>
-        <p>מצלמות המחוברות בכבלים למערכת הקלטה (DVR), מספקות וידאו באיכות יציבה ובעלות נמוכה יותר.</p>
-        <ul>
-            <li>מתאימות למערכת סגורה (לא דורשות אינטרנט).</li>
-            <li>אמינות ופשוטות להתקנה.</li>
-            <li>מחיר נמוך יחסית.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- מחירון שירותים -->
-<section id="pricing">
-    <h2>מחירון התקנת מצלמות אבטחה</h2>
-    <table class="pricing-table">
-        <tr>
-            <th>שירות</th>
-            <th>מחיר משוער</th>
-        </tr>
-        <tr>
-            <td>התקנת מצלמת אבטחה אנלוגית</td>
-            <td>₪500 - ₪900</td>
-        </tr>
-        <tr>
-            <td>התקנת מצלמת אבטחה רשת (IP)</td>
-            <td>₪800 - ₪1500</td>
-        </tr>
-        <tr>
-            <td>מערכת 4 מצלמות + התקנה</td>
-            <td>₪2500 - ₪4000</td>
-        </tr>
-        <tr>
-            <td>מערכת 8 מצלמות + התקנה</td>
-            <td>₪4500 - ₪7000</td>
-        </tr>
-        <tr>
-            <td>שירות תחזוקה ובדיקת מערכת</td>
-            <td>₪300 - ₪600</td>
-        </tr>
-    </table>
-</section>
-
-</section>
-
-        </div>
-        <div class="service">
-            <img src="intercom.jpg" alt="התקנת אינטרקום">
-            <h3>התקנת אינטרקום</h3>
-            <p>התקנת מערכות אינטרקום מתקדמות עם קודנים, מצלמות ואפשרות חיבור לאפליקציה.</p>
-        </div>
-        <div class="service">
-            <img src="lock.jpg" alt="שירותי מנעולנות">
-            <h3>שירותי מנעולנות</h3>
-            <p>פריצת דלתות, החלפת צילינדרים, התקנת מנעולים חכמים וביומטריים.</p>
-        </div>
-    </section>
-
-    <!-- צור קשר -->
-    <section id="contact">
-        <h2>צור קשר</h2>
-        <p>לייעוץ והצעת מחיר, שלחו לנו הודעה בוואטסאפ!</p>
-
-        <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-button" target="_blank">
-            <i class="fab fa-whatsapp"></i> שלח הודעה בוואטסאפ
-        </a>
-
-        <a href="https://www.facebook.com/PerimeterSecurity" target="_blank" class="social-button">
-            <i class="fab fa-facebook"></i> בקרו אותנו בפייסבוק
-        </a>
-
-        <a href="https://www.instagram.com/YOUR_INSTAGRAM" target="_blank" class="instagram-button">
-            <i class="fab fa-instagram"></i> עקבו אחרינו באינסטגרם
-        </a>
-
-        <!-- טופס יצירת קשר -->
-        <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
-            <input type="text" name="name" placeholder="שם מלא" required>
-            <input type="email" name="email" placeholder="אימייל" required>
-            <textarea name="message" placeholder="הודעה" required></textarea>
-            <button type="submit">שלח הודעה</button>
-        </form>
-    </section>
-
-    <!-- כפתור חזרה למעלה -->
-    <button onclick="scrollToTop()" id="backToTop" class="back-to-top">⬆</button>
-
+    <!-- סקריפט הפעלת רקע מונפש -->
     <script>
-        window.onscroll = function() { scrollFunction() };
-
-        function scrollFunction() {
-            let button = document.getElementById("backToTop");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        }
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#aaaaaa" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": false },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": false }, "onclick": { "enable": false } }
+            },
+            "retina_detect": true
+        });
     </script>
 
 </body>
 </html>
+
