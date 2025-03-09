@@ -16,6 +16,10 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    position: relative; /* מוודא שהתוכן לא מוסתר */
+    z-index: 1; /* מבטיח שהתוכן יהיה מעל הרקע */
+}
+
 }
 
 /* תפריט ניווט */
