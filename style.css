@@ -1,25 +1,11 @@
-/* רקע מונפש בצבע לבן */
-#particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ffffff, #f0f0f0);
-    z-index: -10;
-    top: 0;
-    left: 0;
-}
-
-/* סידור התוכן והטקסט */
+/* רקע רגיל במקום אנימציה */
 body {
     font-family: Arial, sans-serif;
     direction: rtl;
     text-align: center;
     margin: 0;
     padding: 0;
-    position: relative; /* מוודא שהתוכן לא מוסתר */
-    z-index: 1; /* מבטיח שהתוכן יהיה מעל הרקע */
-}
-
+    background: #ffffff;
 }
 
 /* תפריט ניווט */
@@ -40,8 +26,6 @@ body {
 
 /* כותרת ולוגו */
 header {
-    position: relative;
-    z-index: 1;
     margin-top: 80px;
 }
 
@@ -52,8 +36,37 @@ header img {
     margin: 0 auto;
 }
 
-/* ווידוא שהתוכן לא מסתיר את הרקע */
-header, .navbar {
-    position: relative;
-    z-index: 1;
+/* שירותים */
+.service {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(240, 240, 240, 0.8);
+}
+
+/* עיצוב לכפתורי יצירת קשר */
+.whatsapp-button, .social-button, .instagram-button {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.whatsapp-button {
+    background: linear-gradient(to right, #25D366, #128C7E);
+}
+
+.social-button {
+    background-color: #3b5998;
+}
+
+.instagram-button {
+    background-color: #E1306C;
 }
