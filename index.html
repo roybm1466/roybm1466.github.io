@@ -70,6 +70,28 @@
         </a>
     </section>
 
+    <!-- כפתור חזרה למעלה -->
+    <button onclick="scrollToTop()" id="backToTop" class="back-to-top">⬆</button>
+
+    <!-- JavaScript להחזרת הכפתור -->
+    <script>
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 </body>
 </html>
+
 
